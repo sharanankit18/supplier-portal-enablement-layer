@@ -1,12 +1,12 @@
-Supplier Portal Enablement Layer — Prototype & Case Study
+# Supplier Portal Enablement Layer — Prototype & Case Study
 
 A product prototype exploring in-product guidance (tooltips, walkthroughs, sandboxes, and AI help) for a supplier-facing onboarding portal in a global enterprise.
 
 ---
 
-TL;DR
+## TL;DR
 
-- Role: Product Manager — Supply Chain (Sourcing, Contracting, Supplier Lifecycle Management, Procurement).
+- Role: Product Manager, Supply Chain (Sourcing, Contracting, Supplier Lifecycle Management, Procurement).
 - What: A clickable prototype of an "enablement layer" for an inhouse-built Supplier Lifecycle Management application. The prototype was used to pressure-test guidance patterns with real business stakeholders.
 - How it was built: Prototyped with Claude (AI-assisted design/build); I directed the requirements, defined the workflow scenarios, and made manual edits to the HTML/JS provided by Claude.
 - Purpose: Turning an abstract "we should add in-app help" conversation into something stakeholders could interact with and provide feedback.
@@ -14,14 +14,14 @@ TL;DR
 
 ---
 
-The Case Study
+## The Case Study
 
-The problem
+### The problem
 
-During our in-house Supplier Lifecycle Management (SLM) platform development, I wanted to build an application that removed the need of traditional user training methods (user guides, lunch-n-learn sessions, etc.) for both internal and external users. As there are several ways to achieve, I didn't want to waste any engineering resources to any one of these without validating which ones actually mattered to stakeholders.
+During our in-house Supplier Lifecycle Management (SLM) platform development, I wanted to build an application that removed the need for traditional user training methods (user guides, lunch-n-learn sessions, etc.) for both internal and external users. Since there are several ways to solve this, I didn't want to waste any engineering resources to any one of these without validating which ones actually mattered to stakeholders.
 
 
-The approach
+### The approach
 
 To gather user feedback, I built a clickable prototype covering distinct guidance patterns, each mapped to a real workflow in the SLM application:
 
@@ -31,19 +31,19 @@ To gather user feedback, I built a clickable prototype covering distinct guidanc
 4. Role-based learning path + certification quiz: for auditable training for roles with sensitive data access
 5. Knowledge base + AI assistant only: a lighter-weight, self-serve option
 
-An additional interface prototype of how the training admin can maintain was also build. This ensured maintenance of in-application guidance without further engineering effort as we roll out new features.
+I also prototyped an authoring/admin console showing how a non-engineering team member could maintain this guidance content directly, so rolling out new features wouldn't require new engineering effort just to update in-app help.
 
 Each pattern was presented as a set of annotated, realistic screens (not wireframes) so stakeholders could react to something concrete rather than a description.
 
 
-The tool
+### The tool
 
-The prototype itself was built using _Claude (Anthropic's AI assistant)_ I specified the requirements, features, the guidance patterns, and the interaction logic, and iterated on the generated HTML/JS manually where I knew enough front-end code to adjust behavior. This allowed me go from "have you seen this website" to a reviewable, interactive artifact in days rather than waiting on a design/dev cycle for something that was explicitly meant to be thrown away or kept, depending on the feedback.
+The prototype itself was built using _Claude (Anthropic's AI assistant)_ I specified the requirements, features, the guidance patterns, and the interaction logic, and iterated on the generated HTML/JS manually where I knew enough front-end code to adjust behavior. This allowed me to go from generic questions to a reviewable, interactive artifact in days rather than waiting on a design/dev cycle for something that was explicitly meant to be thrown away or kept, depending on the feedback.
 
 
-The feedback framework
+### The feedback framework
 
-I walked the prototype through stakeholders across the business and engineering side, and asked them to react to each of the guidance patterns independently using a simple 3-way feedback format:
+I walked stakeholders through the prototype across the business and engineering side, and asked them to react to each of the guidance patterns independently using a simple 3-way feedback format:
 
 |          Signal          |                       Meaning                       |    
 |--------------------------|-----------------------------------------------------|
@@ -51,17 +51,11 @@ I walked the prototype through stakeholders across the business and engineering 
 | Good, but maybe later    | Validated value, not urgent, backlog candidate      |
 | Too much / no clear use  | Cut, avoid building something with no adoption path |
 
-This turned a fuzzy "user need help" ask into a **ranked, evidence-based set of roadmap candidates** rather than a guess.
+This turned a fuzzy "user need help" ask into a ranked, evidence-based set of roadmap candidates rather than a guess.
 
 ### Outcome
 
 - The feedback directly shaped which enablement patterns made it into the SLM roadmap and which were explicitly deprioritized.
-- [Add 1–2 sentences here on concrete impact once you're comfortable sharing it, e.g. "Pattern 1 and 5 were greenlit for Q_ delivery; pattern 2 was scoped down to a smaller subset."]
-- More broadly, this validated a pattern for how I gather requirements going forward: build a prototype fast with AI assistance, use it as a shared artifact for structured feedback, and let that evidence — not the loudest voice in the room — drive prioritization.
-
-### What I'd do differently
-
-- [Optional: add a short, honest retro note — e.g. "I'd test with a broader supplier-side sample, not just internal stakeholders" or "I'd quantify effort next to each option so the trade-off was explicit during scoring."]
 
 ---
 
@@ -70,12 +64,10 @@ This turned a fuzzy "user need help" ask into a **ranked, evidence-based set of 
 This is a static, self-contained HTML/JS prototype — no build step, no server required.
 
 ```bash
-git clone https://github.com/<your-username>/supplier-portal-enablement-demo.git
+git clone https://github.com/sharanankit18/supplier-portal-enablement-demo.git
 cd supplier-portal-enablement-demo
 open src/index.html   # or just double-click the file
 ```
-
-Or use any static file server, e.g. `npx serve src`.
 
 ---
 
@@ -97,7 +89,7 @@ supplier-portal-enablement-demo/
 
 ## Notes on scope
 
-This is a prototype built to gather feedback and validate direction — not production code, and not connected to any live system or real supplier data. All company names, URLs, and identifying details have been genericized.
+This is a prototype built to gather feedback and validate direction, not production code, and not connected to any live system or real supplier data. All company names, URLs, and identifying details have been removed.
 
 ## License
 
