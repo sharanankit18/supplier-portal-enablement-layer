@@ -1,13 +1,13 @@
 Supplier Portal Enablement Layer — Prototype & Case Study
 
-A product prototype exploring in-product guidance (tooltips, walkthroughs, sandboxes, and AI help) for a supplier-facing onboarding portal in a multi-national QSR enterprise.
+A product prototype exploring in-product guidance (tooltips, walkthroughs, sandboxes, and AI help) for a supplier-facing onboarding portal in a global enterprise.
 
 ---
 
 TL;DR
 
-- Role: Product Manager — Supply Chain (Sourcing, Contracting, Supplier Lifecycle Management, Procurement)
-- What: A clickable prototype of an "enablement layer" for an internally-built Supplier Lifecycle Management application. The prototype was used to pressure-test guidance patterns with real business stakeholders.
+- Role: Product Manager — Supply Chain (Sourcing, Contracting, Supplier Lifecycle Management, Procurement).
+- What: A clickable prototype of an "enablement layer" for an inhouse-built Supplier Lifecycle Management application. The prototype was used to pressure-test guidance patterns with real business stakeholders.
 - How it was built: Prototyped with Claude (AI-assisted design/build); I directed the requirements, defined the workflow scenarios, and made manual edits to the HTML/JS provided by Claude.
 - Purpose: Turning an abstract "we should add in-app help" conversation into something stakeholders could interact with and provide feedback.
 - Outcome: Structured feedback across guidance patterns in the platform, sorted into a clear _now / later / no_ framework that fed directly into the product roadmap and guided the PRD.
@@ -18,38 +18,40 @@ The Case Study
 
 The problem
 
-During our in-house Supplier Lifecycle Management (SLM) platform development, there an ask to move away from traditional user training methods (user guides, lunch-n-learn, etc.) But the requirements were vague. Business kept asking _"users want access to help when they need it"_, or _"suppliers do not want to go through screenshot-based user-guides and try to find how to use the system"_.
-As these are not actionable requirements on their own, committing engineering time to any one of these without validating which ones actually mattered to stakeholders risked wasted of resources.
+During our in-house Supplier Lifecycle Management (SLM) platform development, I wanted to build an application that removed the need of traditional user training methods (user guides, lunch-n-learn sessions, etc.) for both internal and external users. As there are several ways to achieve, I didn't want to waste any engineering resources to any one of these without validating which ones actually mattered to stakeholders.
+
 
 The approach
 
-Rather than write a PRD off of a vague ask, I built a clickable prototype covering distinct guidance patterns, each mapped to a real workflow in the SLM application:
+To gather user feedback, I built a clickable prototype covering distinct guidance patterns, each mapped to a real workflow in the SLM application:
 
-1. Microcopy only — inline field-level help and explanatory validation (low complexity, high frequency)
-2. Wizard + walkthrough + sandbox + video + KB + AI — the "everything" option, for high-complexity workflows
-3. Pre-login demo + checklist + lifecycle email nudges** — for quick training of suppliers before their first login
-4. Role-based learning path + certification quiz** — for auditable training for roles with sensitive data access
-5. Knowledge base + AI assistant only — a lighter-weight, self-serve option
+1. Microcopy only: inline field-level help and explanatory validation (low complexity, high frequency)
+2. Wizard + walkthrough + sandbox + video + KB + AI: the "everything" option, for high-complexity workflows
+3. Pre-login demo + checklist + lifecycle email nudges: for quick training of suppliers before their first login
+4. Role-based learning path + certification quiz: for auditable training for roles with sensitive data access
+5. Knowledge base + AI assistant only: a lighter-weight, self-serve option
 
-An additional interface to maintain the training materials was also build. This is to ensure that as new features are rolled out, training admins can keep in-application guidance up-to date
+An additional interface prototype of how the training admin can maintain was also build. This ensured maintenance of in-application guidance without further engineering effort as we roll out new features.
 
 Each pattern was presented as a set of annotated, realistic screens (not wireframes) so stakeholders could react to something concrete rather than a description.
 
-### The tool
 
-The prototype itself was built using **Claude** (Anthropic's AI assistant) — I specified the workflows, the guidance patterns, and the interaction logic, and iterated on the generated HTML/JS manually where I knew enough front-end code to adjust behavior. This let me go from "vague ask" to a reviewable, interactive artifact in days rather than waiting on a design/dev cycle for something that was explicitly meant to be thrown away or kept, depending on the feedback.
+The tool
 
-### The feedback framework
+The prototype itself was built using _Claude (Anthropic's AI assistant)_ I specified the requirements, features, the guidance patterns, and the interaction logic, and iterated on the generated HTML/JS manually where I knew enough front-end code to adjust behavior. This allowed me go from "have you seen this website" to a reviewable, interactive artifact in days rather than waiting on a design/dev cycle for something that was explicitly meant to be thrown away or kept, depending on the feedback.
 
-I walked the prototype through stakeholders across the business and engineering side, and asked them to react to **each of the five patterns independently** using a simple 3-way sort:
 
-| Signal | Meaning |
-|---|---|
-| ✅ **Yes, I want it** | Clear demand, prioritize for near-term roadmap |
-| 🕒 **Good, but maybe later** | Validated value, not urgent — backlog candidate |
-| ❌ **Too much / no clear use** | Cut — avoid building something with no adoption path |
+The feedback framework
 
-This turned a fuzzy "suppliers need help" ask into a **ranked, evidence-based set of roadmap candidates** rather than a guess.
+I walked the prototype through stakeholders across the business and engineering side, and asked them to react to each of the guidance patterns independently using a simple 3-way feedback format:
+
+|          Signal          |                       Meaning                       |    
+|--------------------------|-----------------------------------------------------|
+| Yes, I want it           | Clear demand, prioritize for near-term roadmap      |
+| Good, but maybe later    | Validated value, not urgent, backlog candidate      |
+| Too much / no clear use  | Cut, avoid building something with no adoption path |
+
+This turned a fuzzy "user need help" ask into a **ranked, evidence-based set of roadmap candidates** rather than a guess.
 
 ### Outcome
 
