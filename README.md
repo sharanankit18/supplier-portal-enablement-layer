@@ -64,24 +64,30 @@ This turned a fuzzy "user need help" ask into a ranked, evidence-based set of ro
 This is a static, self-contained HTML/JS prototype — no build step, no server required.
 
 ```bash
-git clone https://github.com/sharanankit18/supplier-portal-enablement-demo.git
-cd supplier-portal-enablement-demo
-open src/index.html   # or just double-click the file
+git clone https://github.com/sharanankit18/supplier-portal-enablement-layer.git
+cd supplier-portal-enablement-layer
+open src/In_Product_Guidance.html   # or just double-click the file
 ```
-
 ---
 
 ## Repo structure
 
 ```
-supplier-portal-enablement-demo/
+supplier-portal-enablement-layer/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
 ├── src/
-│   ├── index.html
-│   └── support.js└── screenshots/
-    └── screenshots of the prototype
+│   ├── In_Product_Guidance.html
+│   └── support.js
+└── screenshots/
+    └── 1_InApp_Microscopy_Only.png
+    └── 2_AI_Search.png
+    └── 2_KB_Article.png
+    └── 2_Wizard.png
+    └── 4_Knowledge_Check.png
+    └── B_Training_Admin_Interface.png
+
 ```
 
 ---
