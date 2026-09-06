@@ -79,10 +79,9 @@ supplier-portal-enablement-demo/
 ├── LICENSE
 ├── .gitignore
 ├── src/
-│   ├── index.html          # the prototype
-│   └── support.js          # supporting logic/runtime for the prototype
-└── docs/
-    └── screenshots/        # optional: a few PNGs or a GIF of the prototype in action
+│   ├── index.html
+│   └── support.js└── screenshots/
+    └── screenshots of the prototype
 ```
 
 ---
