@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:oklch(0.97 0.012 75);}
+  a{color:oklch(0.56 0.17 45);text-decoration:none;}
+  a:hover{color:oklch(0.48 0.18 45);}
+  *{box-sizing:border-box;}
+  ::selection{background:oklch(0.9 0.05 45);}
+</style>
+</helmet>
+
+<div style="font-family:'Plus Jakarta Sans',sans-serif;color:oklch(0.24 0.02 70);background:oklch(0.97 0.012 75);min-height:100vh;padding-bottom:120px;">
+
+  <!-- COVER -->
+  <div style="max-width:1080px;margin:0 auto;padding:64px 32px 32px;">
+    <div style="display:inline-block;background:oklch(0.95 0.035 45);color:oklch(0.5 0.17 45);font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:20px;">Enablement Layer &middot; Screen Lookbook</div>
+    <h1 style="font-family:'Sora',sans-serif;font-size:44px;font-weight:800;line-height:1.1;margin:0 0 16px;">In-product Guidance for the Supplier Portal</h1>
+    <p style="font-size:18px;line-height:1.6;color:oklch(0.48 0.02 70);max-width:680px;margin:0 0 32px;">Five annotated screen sets, each demonstrating the enablement package for one workflow profile from the PRD. Numbered chips call out the underlying capability; grey tags reference the user story.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;">
+      <a href="#micro" style="background:#fff;border:1px solid oklch(0.90 0.014 70);padding:10px 18px;border-radius:10px;font-weight:600;font-size:14px;color:oklch(0.24 0.02 70);">1&nbsp;&middot; Microcopy only</a>
+      <a href="#big" style="background:#fff;border:1px solid oklch(0.90 0.014 70);padding:10px 18px;border-radius:10px;font-weight:600;font-size:14px;color:oklch(0.24 0.02 70);">2&nbsp;&middot; Wizard&#8194;&#43;&#8194;walkthrough&#8194;&#43;&#8194;sandbox&#8194;&#43;&#8194;video&#8194;&#43;&#8194;KB&#8194;&#43;&#8194;AI</a>
+      <a href="#onboard" style="background:#fff;border:1px solid oklch(0.90 0.014 70);padding:10px 18px;border-radius:10px;font-weight:600;font-size:14px;color:oklch(0.24 0.02 70);">3&nbsp;&middot; Pre-login demo&#8194;&#43;&#8194;checklist&#8194;&#43;&#8194;email</a>
+      <a href="#role" style="background:#fff;border:1px solid oklch(0.90 0.014 70);padding:10px 18px;border-radius:10px;font-weight:600;font-size:14px;color:oklch(0.24 0.02 70);">4&nbsp;&middot; Role path&#8194;&#43;&#8194;certification</a>
+      <a href="#adminonly" style="background:#fff;border:1px solid oklch(0.90 0.014 70);padding:10px 18px;border-radius:10px;font-weight:600;font-size:14px;color:oklch(0.24 0.02 70);">5&nbsp;&middot; KB&#8194;&#43;&#8194;AI only</a>
+      <a href="#authoring" style="background:#fff;border:1px solid oklch(0.90 0.014 70);padding:10px 18px;border-radius:10px;font-weight:600;font-size:14px;color:oklch(0.24 0.02 70);">Bonus&#8194;&middot;&#8194;Authoring console</a>
+    </div>
+  </div>
+
+  <!-- ============ SECTION 1: MICROCOPY ONLY ============ -->
+  <div id="micro" style="max-width:1080px;margin:0 auto;padding:56px 32px 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap;">
+      <h2 style="font-family:'Sora',sans-serif;font-size:26px;font-weight:800;margin:0;">1&nbsp;&middot;&nbsp;In-app microcopy only</h2>
+      <span style="background:oklch(0.94 0.01 70);color:oklch(0.48 0.02 70);font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">High frequency &middot; low complexity</span>
+    </div>
+    <p style="color:oklch(0.48 0.02 70);font-size:15px;margin:0 0 28px;max-width:680px;">Workflow: <b>Update Contact Details</b>. No article, no video &mdash; just field help, inline validation and status explainers, shown here to an external supplier user.</p>
+
+    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start;">
+      <div>
+        <div style="border:1px solid oklch(0.90 0.014 70);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+          <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:oklch(0.955 0.012 75);border-bottom:1px solid oklch(0.90 0.014 70);">
+            <div style="display:flex;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span></div>
+            <div style="flex:1;text-align:center;font-size:12px;color:oklch(0.48 0.02 70);">portal.supplierhub.co/account/contacts</div>
+            <span style="background:oklch(0.95 0.035 45);color:oklch(0.5 0.17 45);font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;">External Supplier</span>
+          </div>
+          <div style="padding:28px;">
+            <h3 style="font-family:'Sora',sans-serif;font-size:19px;font-weight:700;margin:0 0 20px;">Company contacts</h3>
+
+            <div style="margin-bottom:6px;display:flex;align-items:center;gap:8px;">
+              <label style="font-size:13px;font-weight:600;color:oklch(0.24 0.02 70);">Primary contact email</label>
+              <span onClick="{{ toggleMicroTip }}" style="width:18px;height:18px;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;">1</span>
+            </div>
+            <div style="position:relative;margin-bottom:8px;">
+              <input value="ops@brightfoodsupply.com" readonly style="width:100%;padding:11px 14px;border:1px solid oklch(0.84 0.016 70);border-radius:9px;font-size:14px;font-family:inherit;color:oklch(0.24 0.02 70);background:#fff;"/>
+              <sc-if value="{{ microTip }}" hint-placeholder-val="{{ true }}">
+                <div style="margin-top:8px;background:oklch(0.24 0.02 70);color:#fff;font-size:13px;line-height:1.5;padding:12px 14px;border-radius:10px;max-width:360px;">This is who we contact about invoices and audit findings. Changing it does not affect your login email.</div>
+              </sc-if>
+            </div>
+
+            <div style="margin:20px 0 6px;display:flex;align-items:center;gap:8px;">
+              <label style="font-size:13px;font-weight:600;">Phone number</label>
+              <span style="width:18px;height:18px;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">2</span>
+            </div>
+            <input value="415-555-0100" readonly style="width:100%;padding:11px 14px;border:1.5px solid oklch(0.58 0.19 25);border-radius:9px;font-size:14px;font-family:inherit;background:oklch(0.98 0.008 25);"/>
+            <div style="margin-top:8px;font-size:13px;color:oklch(0.58 0.19 25);line-height:1.5;"><b>Missing country code.</b> Enter a full international number, e.g. <span style="font-family:ui-monospace,monospace;background:oklch(0.95 0.04 25);padding:1px 6px;border-radius:5px;">+1 415 555 0100</span> &mdash; we use this for audit-day contact only.</div>
+
+            <div style="margin:24px 0 0;padding-top:20px;border-top:1px solid oklch(0.90 0.014 70);display:flex;align-items:center;gap:8px;">
+              <span style="background:oklch(0.95 0.05 80);color:oklch(0.5 0.12 80);font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;">Pending review</span>
+              <span onClick="{{ toggleMicroStatus }}" style="width:18px;height:18px;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;">3</span>
+            </div>
+            <sc-if value="{{ microStatus }}" hint-placeholder-val="{{ true }}">
+              <div style="margin-top:10px;background:oklch(0.955 0.012 75);border:1px solid oklch(0.90 0.014 70);border-radius:10px;padding:14px 16px;font-size:13px;line-height:1.6;color:oklch(0.24 0.02 70);">
+                <div><b>What this means:</b> your contact change is being reviewed by your Cyberdyne business contact.</div>
+                <div><b>Who has it:</b> Cyberdyne business team.</div>
+                <div><b>What's next:</b> no action needed &mdash; typically reviewed within 1 business day.</div>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;padding-top:6px;">
+        <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span><div style="font-size:13.5px;line-height:1.5;"><b>Field-level tooltip</b> &mdash; opens on click, repositions to stay on screen.</div></div>
+        <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">2</span><div style="font-size:13.5px;line-height:1.5;"><b>Explanatory validation</b> &mdash; what's wrong, why, and a valid example, never a raw code.</div></div>
+        <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">3</span><div style="font-size:13.5px;line-height:1.5;"><b>Status explainer</b> &mdash; meaning, owner, next step, on every badge.</div></div>
+        <div style="font-size:12.5px;color:oklch(0.62 0.018 70);margin-top:4px;">Click chips 1 &amp; 3 to toggle the popovers.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start;margin-top:32px;">
+      <div style="border:1px solid oklch(0.90 0.014 70);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+        <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:oklch(0.955 0.012 75);border-bottom:1px solid oklch(0.90 0.014 70);">
+          <div style="display:flex;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span></div>
+          <div style="flex:1;text-align:center;font-size:12px;color:oklch(0.48 0.02 70);">portal.supplierhub.co/account/certificates</div>
+          <span style="background:oklch(0.95 0.035 45);color:oklch(0.5 0.17 45);font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;">External Supplier</span>
+        </div>
+        <div style="padding:48px 32px;text-align:center;">
+          <div style="width:44px;height:44px;border-radius:12px;background:oklch(0.94 0.01 70);margin:0 auto 16px;display:flex;align-items:center;justify-content:center;color:oklch(0.62 0.018 70);font-size:20px;">&#9723;</div>
+          <h3 style="font-family:'Sora',sans-serif;font-size:17px;margin:0 0 6px;">No certificates yet</h3>
+          <p style="color:oklch(0.48 0.02 70);font-size:14px;margin:0 0 18px;max-width:360px;margin-left:auto;margin-right:auto;">Upload a food-safety or quality certificate to keep your sites in good standing.</p>
+          <button style="background:oklch(0.66 0.16 45);color:#fff;border:none;padding:11px 22px;border-radius:9px;font-weight:700;font-size:14px;cursor:pointer;">Upload your first certificate</button>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;padding-top:6px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span><div style="font-size:13.5px;line-height:1.5;"><b>Instructive empty state</b> &mdash; explains what belongs here and offers the CTA, distinct from a "no permission" or "no matches" state.</div></div>
+    </div>
+  </div>
+
+  <!-- ============ SECTION 2: BIG BUNDLE ============ -->
+  <div id="big" style="max-width:1080px;margin:0 auto;padding:64px 32px 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap;">
+      <h2 style="font-family:'Sora',sans-serif;font-size:26px;font-weight:800;margin:0;">2&nbsp;&middot;&nbsp;Wizard &#43; walkthrough &#43; sandbox &#43; video &#43; KB &#43; AI/search</h2>
+      <span style="background:oklch(0.95 0.035 45);color:oklch(0.5 0.17 45);font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">Low frequency &middot; high complexity &middot; high risk</span>
+    </div>
+    <p style="color:oklch(0.48 0.02 70);font-size:15px;margin:0 0 20px;max-width:700px;"><b>WF-SITE-ADD &middot; Add Manufacturing Site.</b> The full package. Switch tabs to see each mechanism &mdash; all six live inside the same workflow.</p>
+
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;">
+      <button onClick="{{ setTabWizard }}" style="background:{{ wizardBtnBg }};color:{{ wizardBtnFg }};border:1px solid oklch(0.90 0.014 70);padding:9px 16px;border-radius:999px;font-weight:700;font-size:13.5px;cursor:pointer;">Wizard</button>
+      <button onClick="{{ setTabWalk }}" style="background:{{ walkBtnBg }};color:{{ walkBtnFg }};border:1px solid oklch(0.90 0.014 70);padding:9px 16px;border-radius:999px;font-weight:700;font-size:13.5px;cursor:pointer;">Guided walkthrough</button>
+      <button onClick="{{ setTabSandbox }}" style="background:{{ sandboxBtnBg }};color:{{ sandboxBtnFg }};border:1px solid oklch(0.90 0.014 70);padding:9px 16px;border-radius:999px;font-weight:700;font-size:13.5px;cursor:pointer;">Sandbox practice</button>
+      <button onClick="{{ setTabVideo }}" style="background:{{ videoBtnBg }};color:{{ videoBtnFg }};border:1px solid oklch(0.90 0.014 70);padding:9px 16px;border-radius:999px;font-weight:700;font-size:13.5px;cursor:pointer;">90-sec video</button>
+      <button onClick="{{ setTabKb }}" style="background:{{ kbBtnBg }};color:{{ kbBtnFg }};border:1px solid oklch(0.90 0.014 70);padding:9px 16px;border-radius:999px;font-weight:700;font-size:13.5px;cursor:pointer;">KB article</button>
+      <button onClick="{{ setTabAi }}" style="background:{{ aiBtnBg }};color:{{ aiBtnFg }};border:1px solid oklch(0.90 0.014 70);padding:9px 16px;border-radius:999px;font-weight:700;font-size:13.5px;cursor:pointer;">AI &amp; search</button>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start;">
+      <div style="border:1px solid oklch(0.90 0.014 70);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.06);min-height:460px;">
+        <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:oklch(0.955 0.012 75);border-bottom:1px solid oklch(0.90 0.014 70);">
+          <div style="display:flex;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span></div>
+          <div style="flex:1;text-align:center;font-size:12px;color:oklch(0.48 0.02 70);">{{ tab2Route }}</div>
+          <span style="background:oklch(0.95 0.035 45);color:oklch(0.5 0.17 45);font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;">External Supplier</span>
+        </div>
+
+        <!-- WIZARD -->
+        <sc-if value="{{ isWizard }}" hint-placeholder-val="{{ true }}">
+          <div style="padding:28px;">
+            <div style="display:flex;gap:8px;align-items:center;margin-bottom:16px;">
+              <div style="flex:1;height:6px;background:oklch(0.90 0.014 70);border-radius:999px;overflow:hidden;"><div style="width:50%;height:100%;background:oklch(0.66 0.16 45);"></div></div>
+              <span style="font-size:12px;font-weight:700;color:oklch(0.48 0.02 70);white-space:nowrap;">Step 2 of 4</span>
+              <span onClick="{{ noop }}" style="width:18px;height:18px;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span>
+            </div>
+            <div style="background:oklch(0.955 0.012 75);border:1px solid oklch(0.90 0.014 70);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.5;margin-bottom:20px;display:flex;gap:8px;">
+              <span style="width:18px;height:18px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">2</span>
+              <div><b>Before you start:</b> have your facility's operating license number and food-safety certificate ready.</div>
+            </div>
+            <h3 style="font-family:'Sora',sans-serif;font-size:17px;margin:0 0 16px;">Site details</h3>
+            <label style="font-size:13px;font-weight:600;">Site name</label>
+            <input value="Brightfoods Distribution Center 4" readonly style="width:100%;margin:6px 0 14px;padding:11px 14px;border:1px solid oklch(0.84 0.016 70);border-radius:9px;font-size:14px;font-family:inherit;"/>
+            <label style="font-size:13px;font-weight:600;">Address</label>
+            <input value="1200 Harbor Way, Rotterdam, NL" readonly style="width:100%;margin:6px 0 14px;padding:11px 14px;border:1px solid oklch(0.84 0.016 70);border-radius:9px;font-size:14px;font-family:inherit;"/>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:20px;">
+              <div style="display:flex;gap:8px;align-items:center;"><a href="#big" style="font-size:13px;font-weight:600;">Save &amp; continue later</a><span style="width:18px;height:18px;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">3</span></div>
+              <div style="display:flex;gap:10px;"><button style="background:#fff;border:1px solid oklch(0.84 0.016 70);padding:10px 18px;border-radius:9px;font-weight:700;font-size:13.5px;">Back</button><button style="background:oklch(0.66 0.16 45);color:#fff;border:none;padding:10px 20px;border-radius:9px;font-weight:700;font-size:13.5px;">Continue</button></div>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- WALKTHROUGH -->
+        <sc-if value="{{ isWalk }}" hint-placeholder-val="{{ true }}">
+          <div style="padding:28px;position:relative;">
+            <h3 style="font-family:'Sora',sans-serif;font-size:17px;margin:0 0 16px;">Site details</h3>
+            <label style="font-size:13px;font-weight:600;">Site name</label>
+            <input readonly value="Brightfoods Distribution Center 4" style="width:100%;margin:6px 0 14px;padding:11px 14px;border-radius:9px;font-size:14px;font-family:inherit;border:{{ nameBorder }};box-shadow:{{ nameShadow }};"/>
+            <label style="font-size:13px;font-weight:600;">Address</label>
+            <input readonly value="1200 Harbor Way, Rotterdam, NL" style="width:100%;margin:6px 0 14px;padding:11px 14px;border-radius:9px;font-size:14px;font-family:inherit;border:{{ addrBorder }};box-shadow:{{ addrShadow }};"/>
+            <label style="font-size:13px;font-weight:600;">Country</label>
+            <input readonly value="Netherlands" style="width:100%;margin:6px 0 14px;padding:11px 14px;border-radius:9px;font-size:14px;font-family:inherit;border:{{ countryBorder }};box-shadow:{{ countryShadow }};"/>
+            <button style="background:oklch(0.66 0.16 45);color:#fff;border:{{ submitBorder }};padding:10px 20px;border-radius:9px;font-weight:700;font-size:13.5px;box-shadow:{{ submitShadow }};">Submit for review</button>
+
+            <div style="margin-top:22px;background:oklch(0.24 0.02 70);color:#fff;border-radius:12px;padding:16px 18px;">
+              <div style="font-size:11px;font-weight:700;letter-spacing:0.03em;text-transform:uppercase;color:oklch(0.75 0.03 45);margin-bottom:6px;">Step {{ wtStepNum }} of 4</div>
+              <div style="font-weight:700;font-size:15px;margin-bottom:6px;">{{ wtTitle }}</div>
+              <div style="font-size:13.5px;line-height:1.5;color:oklch(0.85 0.01 70);margin-bottom:14px;">{{ wtBody }}</div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <button onClick="{{ wtBack }}" style="background:transparent;color:#fff;border:1px solid oklch(0.4 0.02 70);padding:7px 14px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">Back</button>
+                <a href="#big" style="font-size:12.5px;color:oklch(0.75 0.01 70);">Close</a>
+                <button onClick="{{ wtNext }}" style="background:oklch(0.66 0.16 45);color:#fff;border:none;padding:7px 16px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;">Next</button>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- SANDBOX -->
+        <sc-if value="{{ isSandbox }}" hint-placeholder-val="{{ true }}">
+          <div>
+            <div style="background:oklch(0.95 0.05 80);color:oklch(0.42 0.1 80);padding:10px 20px;font-size:13px;font-weight:700;text-align:center;border-bottom:1px solid oklch(0.9 0.05 80);">PRACTICE MODE &mdash; nothing you submit here is real</div>
+            <div style="padding:28px;">
+              <sc-if value="{{ !sandboxSubmitted }}" hint-placeholder-val="{{ true }}">
+                <h3 style="font-family:'Sora',sans-serif;font-size:17px;margin:0 0 16px;">Site details <span style="font-weight:400;font-size:13px;color:oklch(0.48 0.02 70);">(dummy data)</span></h3>
+                <label style="font-size:13px;font-weight:600;">Site name</label>
+                <input readonly value="Practice Site &mdash; Acme Foods Test Co." style="width:100%;margin:6px 0 20px;padding:11px 14px;border:1px solid oklch(0.84 0.016 70);border-radius:9px;font-size:14px;font-family:inherit;"/>
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                  <a href="#big" style="font-size:13px;font-weight:600;">Reset practice environment</a>
+                  <button onClick="{{ submitSandbox }}" style="background:oklch(0.66 0.16 45);color:#fff;border:none;padding:10px 20px;border-radius:9px;font-weight:700;font-size:13.5px;cursor:pointer;">Submit practice site</button>
+                </div>
+              </sc-if>
+              <sc-if value="{{ sandboxSubmitted }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;gap:8px;margin-bottom:16px;"><span style="width:18px;height:18px;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span><div style="font-size:13px;color:oklch(0.48 0.02 70);">Simulated outcome &mdash; users see both paths so a rejection isn't a surprise the first time it's real.</div></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+                  <div style="border:1px solid oklch(0.9 0.045 150);background:oklch(0.97 0.02 150);border-radius:12px;padding:16px;">
+                    <div style="font-weight:700;font-size:13.5px;color:oklch(0.4 0.1 150);margin-bottom:4px;">Simulated: Approved</div>
+                    <div style="font-size:12.5px;color:oklch(0.4 0.05 150);line-height:1.5;">Your submission would move to Cyberdyne audit review, then activation.</div>
+                  </div>
+                  <div style="border:1px solid oklch(0.9 0.04 25);background:oklch(0.98 0.01 25);border-radius:12px;padding:16px;">
+                    <div style="font-weight:700;font-size:13.5px;color:oklch(0.5 0.15 25);margin-bottom:4px;">Simulated: Returned for rework</div>
+                    <div style="font-size:12.5px;color:oklch(0.45 0.08 25);line-height:1.5;">Missing operating license number &mdash; here's how you'd fix it for real.</div>
+                  </div>
+                </div>
+                <button onClick="{{ resetSandbox }}" style="margin-top:16px;background:#fff;border:1px solid oklch(0.84 0.016 70);padding:9px 16px;border-radius:9px;font-weight:700;font-size:13px;cursor:pointer;">Try again</button>
+              </sc-if>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- VIDEO -->
+        <sc-if value="{{ isVideo }}" hint-placeholder-val="{{ true }}">
+          <div style="padding:24px;">
+            <div style="background:oklch(0.18 0.01 70);border-radius:12px;aspect-ratio:16/9;position:relative;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+              <span onClick="{{ togglePlay }}" style="width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,0.15);border:2px solid #fff;color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;">{{ playIcon }}</span>
+              <div style="position:absolute;bottom:12px;left:14px;right:14px;">
+                <div style="height:4px;background:rgba(255,255,255,0.25);border-radius:999px;overflow:hidden;margin-bottom:8px;"><div style="width:42%;height:100%;background:oklch(0.7 0.16 45);"></div></div>
+                <div style="display:flex;justify-content:space-between;font-size:11px;color:#fff;">
+                  <span>0:38 / 1:29</span>
+                  <span style="display:flex;gap:8px;"><span style="background:rgba(255,255,255,0.2);padding:2px 8px;border-radius:5px;">CC</span><span style="background:rgba(255,255,255,0.2);padding:2px 8px;border-radius:5px;">1x</span></span>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;gap:8px;align-items:flex-start;background:oklch(0.955 0.012 75);border:1px solid oklch(0.90 0.014 70);border-radius:10px;padding:12px 14px;">
+              <span style="width:18px;height:18px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span>
+              <div style="font-size:13px;line-height:1.6;"><b>Transcript</b> (searchable, click a line to seek)<br/>00:31 &mdash; "Next, confirm the address tied to your operating license."<br/><span style="background:oklch(0.95 0.035 45);padding:1px 4px;border-radius:4px;">00:38 &mdash; "Select the country &mdash; this decides which audit rules apply."</span></div>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- KB ARTICLE -->
+        <sc-if value="{{ isKb }}" hint-placeholder-val="{{ true }}">
+          <div style="padding:28px;">
+            <div style="font-size:12px;color:oklch(0.62 0.018 70);margin-bottom:8px;">Updated 14 Jul 2026 &middot; English</div>
+            <h3 style="font-family:'Sora',sans-serif;font-size:19px;margin:0 0 14px;">How to add a manufacturing site</h3>
+            <div style="background:oklch(0.955 0.012 75);border-left:3px solid oklch(0.66 0.16 45);border-radius:0 8px 8px 0;padding:12px 14px;font-size:13.5px;margin-bottom:16px;"><b>Before you start:</b> operating license number, food-safety certificate, and site address.</div>
+            <ol style="font-size:14px;line-height:1.9;padding-left:20px;margin:0 0 20px;">
+              <li>Go to Sites &rarr; Add manufacturing site.</li>
+              <li>Enter site details and confirm the licensed address.</li>
+              <li>Upload your food-safety certificate.</li>
+              <li>Submit &mdash; track status from the Sites dashboard.</li>
+            </ol>
+            <div style="display:flex;align-items:center;gap:10px;padding-top:16px;border-top:1px solid oklch(0.90 0.014 70);">
+              <span style="font-size:13px;font-weight:600;">Was this helpful?</span>
+              <button onClick="{{ fbYes }}" style="background:{{ yesBtnBg }};border:1px solid oklch(0.84 0.016 70);padding:6px 14px;border-radius:999px;font-size:12.5px;font-weight:700;cursor:pointer;">Yes</button>
+              <button onClick="{{ fbNo }}" style="background:{{ noBtnBg }};border:1px solid oklch(0.84 0.016 70);padding:6px 14px;border-radius:999px;font-size:12.5px;font-weight:700;cursor:pointer;">No</button>
+            </div>
+            <sc-if value="{{ fbNoActive }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:10px;font-size:12.5px;color:oklch(0.48 0.02 70);">Thanks &mdash; this routes to the article owner with your context attached.</div>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <!-- AI & SEARCH -->
+        <sc-if value="{{ isAi }}" hint-placeholder-val="{{ true }}">
+          <div style="padding:28px;">
+            <div style="display:flex;align-items:center;gap:8px;background:oklch(0.955 0.012 75);border:1px solid oklch(0.90 0.014 70);border-radius:10px;padding:10px 14px;margin-bottom:16px;">
+              <span style="color:oklch(0.62 0.018 70);">&#8981;</span>
+              <span style="font-size:14px;color:oklch(0.24 0.02 70);">what documents do I need to add a manufacturing site</span>
+            </div>
+            <div style="font-size:12px;font-weight:700;color:oklch(0.48 0.02 70);text-transform:uppercase;letter-spacing:0.03em;margin-bottom:8px;">Search results</div>
+            <div style="border:1px solid oklch(0.90 0.014 70);border-radius:10px;padding:12px 14px;margin-bottom:8px;"><b style="font-size:13.5px;">How to add a manufacturing site</b><div style="font-size:12.5px;color:oklch(0.48 0.02 70);">...have your <span style="background:oklch(0.95 0.035 45);">operating license number</span> and food-safety certificate ready...</div></div>
+            <div style="border:1px solid oklch(0.90 0.014 70);border-radius:10px;padding:12px 14px;margin-bottom:18px;"><b style="font-size:13.5px;">90-sec video: Add a manufacturing site</b><div style="font-size:12.5px;color:oklch(0.48 0.02 70);">0:31 &mdash; "confirm the address tied to your operating license"</div></div>
+            <sc-if value="{{ !aiAsked }}" hint-placeholder-val="{{ true }}">
+              <button onClick="{{ askAi }}" style="background:oklch(0.66 0.16 45);color:#fff;border:none;padding:10px 18px;border-radius:9px;font-weight:700;font-size:13px;cursor:pointer;">Ask the assistant instead</button>
+            </sc-if>
+            <sc-if value="{{ aiAsked }}" hint-placeholder-val="{{ false }}">
+              <div style="background:oklch(0.24 0.02 70);color:#fff;border-radius:12px;padding:16px 18px;">
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.03em;color:oklch(0.75 0.03 45);margin-bottom:8px;">Assistant</div>
+                <div style="font-size:13.5px;line-height:1.6;margin-bottom:12px;">You'll need your facility's operating license number, its licensed address, and a current food-safety certificate to upload. The country you select determines which audit rules apply.</div>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;"><span style="background:rgba(255,255,255,0.12);font-size:11px;padding:3px 9px;border-radius:999px;">Source: How to add a manufacturing site</span><span style="background:rgba(255,255,255,0.12);font-size:11px;padding:3px 9px;border-radius:999px;">Source: Site details step</span></div>
+              </div>
+            </sc-if>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:14px;padding-top:6px;">
+        <sc-if value="{{ isWizard }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span><div style="font-size:13.5px;line-height:1.5;"><b>Visible step progress</b>, not one overwhelming form.</div></div>
+          <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">2</span><div style="font-size:13.5px;line-height:1.5;">"What you'll need" stated before, not after, a failed upload.</div></div>
+          <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">3</span><div style="font-size:13.5px;line-height:1.5;">Save &amp; resume &mdash; find the license number later without losing work.</div></div>
+        </sc-if>
+        <sc-if value="{{ isWalk }}" hint-placeholder-val="{{ false }}">
+          <div style="font-size:13.5px;line-height:1.6;">Spotlight highlights the live field while the callout carries the instruction. Never blocks the underlying form &mdash; user can ignore it and keep typing.</div>
+          <div style="font-size:12.5px;color:oklch(0.62 0.018 70);">Click Back/Next in the callout to move through all 4 steps.</div>
+        </sc-if>
+        <sc-if value="{{ isSandbox }}" hint-placeholder-val="{{ false }}">
+          <div style="font-size:13.5px;line-height:1.6;">Realistic dummy data, never a real supplier record. Practice submissions never enter an approval queue or touch ERP.</div>
+          <div style="font-size:12.5px;color:oklch(0.62 0.018 70);">Click "Submit practice site" to see both simulated outcomes.</div>
+        </sc-if>
+        <sc-if value="{{ isVideo }}" hint-placeholder-val="{{ false }}">
+          <div style="font-size:13.5px;line-height:1.6;">Captions on by default; transcript is searchable and seeks the player. One task per video, 45&ndash;90 seconds.</div>
+        </sc-if>
+        <sc-if value="{{ isKb }}" hint-placeholder-val="{{ false }}">
+          <div style="font-size:13.5px;line-height:1.6;">Feedback is captured with full context and routes to the owner &mdash; not shown publicly.</div>
+        </sc-if>
+        <sc-if value="{{ isAi }}" hint-placeholder-val="{{ false }}">
+          <div style="font-size:13.5px;line-height:1.6;">Search covers article, video transcript and walkthrough text together. The assistant answers only from published guidance and always cites its source.</div>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SECTION 3: ONBOARDING ============ -->
+  <div id="onboard" style="max-width:1080px;margin:0 auto;padding:64px 32px 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap;">
+      <h2 style="font-family:'Sora',sans-serif;font-size:26px;font-weight:800;margin:0;">3&nbsp;&middot;&nbsp;Pre-login demo &#43; checklist &#43; welcome email sequence</h2>
+      <span style="background:oklch(0.94 0.01 70);color:oklch(0.48 0.02 70);font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">First-time onboarding</span>
+    </div>
+    <p style="color:oklch(0.48 0.02 70);font-size:15px;margin:0 0 24px;max-width:700px;">Workflow: <b>Supplier registration</b>, from an anonymous invite through the first weeks as a registered user.</p>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:32px;">
+      <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start;">
+        <div style="border:1px solid oklch(0.90 0.014 70);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+          <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:oklch(0.955 0.012 75);border-bottom:1px solid oklch(0.90 0.014 70);">
+            <div style="display:flex;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span></div>
+            <div style="flex:1;text-align:center;font-size:12px;color:oklch(0.48 0.02 70);">portal.supplierhub.co/demo/register</div>
+            <span style="background:oklch(0.94 0.01 70);color:oklch(0.48 0.02 70);font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;">Public &middot; no login</span>
+          </div>
+          <div style="padding:28px;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;">
+              <span style="background:oklch(0.95 0.05 80);color:oklch(0.45 0.11 80);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">DEMO &mdash; nothing you enter is saved</span>
+              <span style="width:18px;height:18px;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span>
+            </div>
+            <div style="font-size:12px;color:oklch(0.62 0.018 70);margin-bottom:6px;">Demo &middot; step 2 of 5</div>
+            <h3 style="font-family:'Sora',sans-serif;font-size:17px;margin:0 0 16px;">Confirm your company details</h3>
+            <label style="font-size:13px;font-weight:600;">Legal company name</label>
+            <input readonly value="Brightfoods Ltd. (example)" style="width:100%;margin:6px 0 20px;padding:11px 14px;border:1px solid oklch(0.84 0.016 70);border-radius:9px;font-size:14px;font-family:inherit;"/>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <button style="background:#fff;border:1px solid oklch(0.84 0.016 70);padding:9px 16px;border-radius:9px;font-weight:700;font-size:13px;">Back</button>
+              <button style="background:oklch(0.66 0.16 45);color:#fff;border:none;padding:9px 18px;border-radius:9px;font-weight:700;font-size:13px;">Next</button>
+            </div>
+            <div style="text-align:center;margin-top:20px;padding-top:16px;border-top:1px solid oklch(0.90 0.014 70);">
+              <a href="#onboard" style="font-weight:700;font-size:13.5px;">Start real registration &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;padding-top:6px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span><div style="font-size:13.5px;line-height:1.5;">Click-through replica with fictitious data, unmistakably badged, never touching production systems.</div></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start;">
+        <div style="border:1px solid oklch(0.90 0.014 70);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+          <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:oklch(0.955 0.012 75);border-bottom:1px solid oklch(0.90 0.014 70);">
+            <div style="display:flex;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span></div>
+            <div style="flex:1;text-align:center;font-size:12px;color:oklch(0.48 0.02 70);">portal.supplierhub.co/home</div>
+            <span style="background:oklch(0.95 0.035 45);color:oklch(0.5 0.17 45);font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;">External Supplier Admin</span>
+          </div>
+          <div style="padding:24px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+              <h3 style="font-family:'Sora',sans-serif;font-size:16px;margin:0;">Welcome &mdash; let's get you set up</h3>
+              <span style="width:18px;height:18px;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span>
+            </div>
+            <div style="font-size:12.5px;color:oklch(0.48 0.02 70);margin-bottom:6px;">{{ checklistDone }} of {{ checklistTotal }} done</div>
+            <div style="height:6px;background:oklch(0.90 0.014 70);border-radius:999px;overflow:hidden;margin-bottom:16px;"><div style="height:100%;background:oklch(0.62 0.13 150);width:{{ checklistPct }}%;"></div></div>
+
+            <div onClick="{{ toggleProfile }}" style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid oklch(0.92 0.01 70);cursor:pointer;">
+              <span style="width:20px;height:20px;border-radius:6px;border:1.5px solid {{ profileBorder }};background:{{ profileBg }};color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center;">{{ profileCheck }}</span>
+              <span style="font-size:13.5px;text-decoration:{{ profileStrike }};color:{{ profileColor }};">Confirm company profile</span>
+            </div>
+            <div onClick="{{ toggleInvite }}" style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid oklch(0.92 0.01 70);cursor:pointer;">
+              <span style="width:20px;height:20px;border-radius:6px;border:1.5px solid {{ inviteBorder }};background:{{ inviteBg }};color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center;">{{ inviteCheck }}</span>
+              <span style="font-size:13.5px;text-decoration:{{ inviteStrike }};color:{{ inviteColor }};">Invite a colleague</span>
+            </div>
+            <div onClick="{{ toggleSite }}" style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid oklch(0.92 0.01 70);cursor:pointer;">
+              <span style="width:20px;height:20px;border-radius:6px;border:1.5px solid {{ siteBorder }};background:{{ siteBg }};color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center;">{{ siteCheck }}</span>
+              <span style="font-size:13.5px;text-decoration:{{ siteStrike }};color:{{ siteColor }};">Add your first manufacturing site</span>
+            </div>
+            <div onClick="{{ toggleBanking }}" style="display:flex;align-items:center;gap:10px;padding:10px 0;cursor:pointer;">
+              <span style="width:20px;height:20px;border-radius:6px;border:1.5px solid {{ bankingBorder }};background:{{ bankingBg }};color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center;">{{ bankingCheck }}</span>
+              <span style="font-size:13.5px;text-decoration:{{ bankingStrike }};color:{{ bankingColor }};">Confirm banking contact</span>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;padding-top:6px;">
+          <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span><div style="font-size:13.5px;line-height:1.5;">Tasks are only listed for what a Supplier Admin can do; completion is detected automatically, never self-reported.</div></div>
+          <div style="font-size:12.5px;color:oklch(0.62 0.018 70);">Click a row to try marking it complete.</div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start;">
+        <div style="border:1px solid oklch(0.90 0.014 70);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+          <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:oklch(0.955 0.012 75);border-bottom:1px solid oklch(0.90 0.014 70);">
+            <div style="display:flex;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span></div>
+            <div style="flex:1;text-align:center;font-size:12px;color:oklch(0.48 0.02 70);">Inbox &mdash; welcome@supplierhub.co</div>
+          </div>
+          <div style="padding:8px 0;">
+            <div style="padding:16px 24px;border-bottom:1px solid oklch(0.92 0.01 70);"><div style="display:flex;justify-content:space-between;"><b style="font-size:13.5px;">Welcome to Supplier Portal, Brightfoods</b><span style="font-size:11px;color:oklch(0.62 0.018 70);">Day 0</span></div><div style="font-size:12.5px;color:oklch(0.48 0.02 70);">Here's how to get set up in under 10 minutes, <span style="background:oklch(0.95 0.035 45);padding:0 4px;border-radius:4px;">&#123;&#123;first_name&#125;&#125;</span>...</div></div>
+            <div style="padding:16px 24px;border-bottom:1px solid oklch(0.92 0.01 70);"><div style="display:flex;justify-content:space-between;"><b style="font-size:13.5px;">3 tasks left to finish setup</b><span style="font-size:11px;color:oklch(0.62 0.018 70);">Day 7</span></div><div style="font-size:12.5px;color:oklch(0.48 0.02 70);">Pick up where you left off &mdash; next up: <span style="background:oklch(0.95 0.035 45);padding:0 4px;border-radius:4px;">&#123;&#123;next_task&#125;&#125;</span></div></div>
+            <div style="padding:16px 24px;"><div style="display:flex;justify-content:space-between;"><b style="font-size:13.5px;color:oklch(0.62 0.018 70);">Reminder: your setup is incomplete</b><span style="font-size:11px;color:oklch(0.62 0.018 70);">Day 14</span></div><div style="font-size:12.5px;color:oklch(0.62 0.018 70);">Final reminder before this escalates to your Cyberdyne contact.</div></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;padding-top:6px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span><div style="font-size:13.5px;line-height:1.5;">Sequence stops the moment the checklist is complete; max 2 reminders before it escalates to a person instead of nagging further.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SECTION 4: ROLE PATH + CERTIFICATION ============ -->
+  <div id="role" style="max-width:1080px;margin:0 auto;padding:64px 32px 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap;">
+      <h2 style="font-family:'Sora',sans-serif;font-size:26px;font-weight:800;margin:0;">4&nbsp;&middot;&nbsp;Role-based path &#43; certification &#43; KB &#43; walkthrough</h2>
+      <span style="background:oklch(0.94 0.025 205);color:oklch(0.4 0.09 205);font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">Internal approver / auditor</span>
+    </div>
+    <p style="color:oklch(0.48 0.02 70);font-size:15px;margin:0 0 20px;max-width:700px;">Workflow: <b>Site audit review.</b> Content is referenced, not duplicated &mdash; the same article/video/walkthrough from Section 2 feed this path.</p>
+
+    <div style="display:flex;gap:8px;margin-bottom:20px;">
+      <button onClick="{{ setRolePath }}" style="background:{{ pathTabBg }};color:{{ pathTabFg }};border:1px solid oklch(0.90 0.014 70);padding:9px 16px;border-radius:999px;font-weight:700;font-size:13.5px;cursor:pointer;">Learning path</button>
+      <button onClick="{{ setRoleQuiz }}" style="background:{{ quizTabBg }};color:{{ quizTabFg }};border:1px solid oklch(0.90 0.014 70);padding:9px 16px;border-radius:999px;font-weight:700;font-size:13.5px;cursor:pointer;">Knowledge check</button>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start;">
+      <div style="border:1px solid oklch(0.90 0.014 70);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.06);min-height:340px;">
+        <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:oklch(0.955 0.012 75);border-bottom:1px solid oklch(0.90 0.014 70);">
+          <div style="display:flex;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span></div>
+          <div style="flex:1;text-align:center;font-size:12px;color:oklch(0.48 0.02 70);">portal.supplierhub.co/learning/site-audit-review</div>
+          <span style="background:oklch(0.94 0.025 205);color:oklch(0.4 0.09 205);font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;">Internal Auditor</span>
+        </div>
+
+        <sc-if value="{{ roleShowsPath }}" hint-placeholder-val="{{ true }}">
+          <div style="padding:28px;">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;">
+              <h3 style="font-family:'Sora',sans-serif;font-size:17px;margin:0;">Site audit review &mdash; required path</h3>
+              <span style="background:oklch(0.95 0.05 80);color:oklch(0.45 0.11 80);font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;">Mandatory &middot; due Aug 15</span>
+            </div>
+            <div style="font-size:12.5px;color:oklch(0.48 0.02 70);margin-bottom:14px;">3 of 4 complete</div>
+            <div style="display:flex;flex-direction:column;gap:0;">
+              <div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid oklch(0.92 0.01 70);"><span style="color:oklch(0.62 0.13 150);font-size:16px;">&#10003;</span><span style="font-size:13.5px;flex:1;">Article &mdash; How audit review decisions are made</span><span style="font-size:11.5px;color:oklch(0.62 0.018 70);">Completed</span></div>
+              <div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid oklch(0.92 0.01 70);"><span style="color:oklch(0.62 0.13 150);font-size:16px;">&#10003;</span><span style="font-size:13.5px;flex:1;">Video &mdash; Reviewing a site submission (90s)</span><span style="font-size:11.5px;color:oklch(0.62 0.018 70);">Completed</span></div>
+              <div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid oklch(0.92 0.01 70);"><span style="color:oklch(0.62 0.13 150);font-size:16px;">&#10003;</span><span style="font-size:13.5px;flex:1;">Walkthrough &mdash; Approve or return a submission</span><span style="font-size:11.5px;color:oklch(0.62 0.018 70);">Completed</span></div>
+              <div style="display:flex;align-items:center;gap:12px;padding:12px 0;"><span style="border:1.5px solid oklch(0.84 0.016 70);border-radius:50%;width:16px;height:16px;display:inline-block;"></span><span style="font-size:13.5px;flex:1;font-weight:600;">Knowledge check</span><a onClick="{{ setRoleQuiz }}" style="font-size:12.5px;font-weight:700;cursor:pointer;">Start &rarr;</a></div>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ roleShowsQuiz }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:28px;">
+            <sc-if value="{{ !quizSubmitted }}" hint-placeholder-val="{{ true }}">
+              <div style="font-size:11px;font-weight:700;color:oklch(0.62 0.018 70);text-transform:uppercase;letter-spacing:0.03em;margin-bottom:10px;">Question 3 of 6</div>
+              <h3 style="font-family:'Sora',sans-serif;font-size:16px;margin:0 0 16px;">A submission is missing its food-safety certificate. What should you do?</h3>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;">
+                <label style="display:flex;gap:10px;align-items:center;border:1px solid oklch(0.84 0.016 70);border-radius:9px;padding:11px 14px;font-size:13.5px;"><input type="radio" name="q3"/>Approve it and request the certificate afterward</label>
+                <label style="display:flex;gap:10px;align-items:center;border:1.5px solid oklch(0.66 0.16 45);background:oklch(0.98 0.015 45);border-radius:9px;padding:11px 14px;font-size:13.5px;"><input type="radio" name="q3" checked/>Return it for rework with the specific missing document named</label>
+                <label style="display:flex;gap:10px;align-items:center;border:1px solid oklch(0.84 0.016 70);border-radius:9px;padding:11px 14px;font-size:13.5px;"><input type="radio" name="q3"/>Reject it permanently</label>
+              </div>
+              <button onClick="{{ submitQuiz }}" style="background:oklch(0.66 0.16 45);color:#fff;border:none;padding:10px 20px;border-radius:9px;font-weight:700;font-size:13.5px;cursor:pointer;">Submit</button>
+            </sc-if>
+            <sc-if value="{{ quizSubmitted }}" hint-placeholder-val="{{ false }}">
+              <div style="text-align:center;padding:20px 0;">
+                <div style="width:48px;height:48px;border-radius:50%;background:oklch(0.94 0.045 150);color:oklch(0.5 0.13 150);font-size:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">&#10003;</div>
+                <h3 style="font-family:'Sora',sans-serif;font-size:18px;margin:0 0 6px;">Certified &mdash; Site Audit Review</h3>
+                <div style="font-size:13px;color:oklch(0.48 0.02 70);margin-bottom:18px;">Score 6/6 &middot; Expires 26 Jul 2027</div>
+                <button style="background:#fff;border:1px solid oklch(0.84 0.016 70);padding:9px 18px;border-radius:9px;font-weight:700;font-size:13px;">Export certification record</button>
+              </div>
+            </sc-if>
+          </div>
+        </sc-if>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;padding-top:6px;">
+        <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span><div style="font-size:13.5px;line-height:1.5;">Path items are existing content, referenced not duplicated; sequencing is a recommendation unless marked mandatory.</div></div>
+        <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">2</span><div style="font-size:13.5px;line-height:1.5;">Passing creates an immutable, exportable certification record for audit evidence.</div></div>
+        <div style="font-size:12.5px;color:oklch(0.62 0.018 70);">Try the quiz &mdash; any option submits to "Certified."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SECTION 5: KB + AI ONLY ============ -->
+  <div id="adminonly" style="max-width:1080px;margin:0 auto;padding:64px 32px 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap;">
+      <h2 style="font-family:'Sora',sans-serif;font-size:26px;font-weight:800;margin:0;">5&nbsp;&middot;&nbsp;KB article &#43; AI/search coverage only</h2>
+      <span style="background:oklch(0.94 0.01 70);color:oklch(0.48 0.02 70);font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">Rarely-used admin function</span>
+    </div>
+    <p style="color:oklch(0.48 0.02 70);font-size:15px;margin:0 0 20px;max-width:700px;">Workflow: <b>Manage tenant users.</b> No wizard, no walkthrough, no video &mdash; the enablement package for infrequent admin tasks is deliberately the lightest one.</p>
+
+    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start;">
+      <div style="border:1px solid oklch(0.90 0.014 70);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+        <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:oklch(0.955 0.012 75);border-bottom:1px solid oklch(0.90 0.014 70);">
+          <div style="display:flex;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span></div>
+          <div style="flex:1;text-align:center;font-size:12px;color:oklch(0.48 0.02 70);">portal.supplierhub.co/admin/users</div>
+          <span style="background:oklch(0.95 0.035 45);color:oklch(0.5 0.17 45);font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;">External Supplier Admin</span>
+        </div>
+        <div style="padding:28px;">
+          <div style="display:flex;align-items:center;gap:8px;background:oklch(0.955 0.012 75);border:1px solid oklch(0.90 0.014 70);border-radius:10px;padding:10px 14px;margin-bottom:18px;">
+            <span style="width:18px;height:18px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span>
+            <span style="font-size:14px;color:oklch(0.24 0.02 70);">how do I remove a user from my company</span>
+          </div>
+          <h3 style="font-family:'Sora',sans-serif;font-size:18px;margin:0 0 6px;">Managing your company's users</h3>
+          <div style="font-size:12px;color:oklch(0.62 0.018 70);margin-bottom:14px;">Updated 2 Jun 2026</div>
+          <p style="font-size:14px;line-height:1.7;margin:0 0 14px;">As a Supplier Admin, you can invite, deactivate, and change permissions for your company's users from <b>Admin &rarr; Users</b>. Deactivating a user does not delete their submission history.</p>
+          <div style="display:flex;align-items:center;gap:8px;padding-top:14px;border-top:1px solid oklch(0.90 0.014 70);">
+            <span style="width:18px;height:18px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">2</span>
+            <span style="font-size:13px;color:oklch(0.48 0.02 70);">No article match for "bulk export"? Zero-result queries like this feed the content backlog directly.</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;padding-top:6px;">
+        <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span><div style="font-size:13.5px;line-height:1.5;">Search surfaces the article directly from the admin screen &mdash; no separate portal to hunt through.</div></div>
+        <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">2</span><div style="font-size:13.5px;line-height:1.5;">Zero-result searches are logged and become the evidence base for what to write next.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BONUS: AUTHORING CONSOLE ============ -->
+  <div id="authoring" style="max-width:1080px;margin:0 auto;padding:64px 32px 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap;">
+      <h2 style="font-family:'Sora',sans-serif;font-size:26px;font-weight:800;margin:0;">Bonus&nbsp;&middot;&nbsp;Where the business publishes this</h2>
+      <span style="background:oklch(0.94 0.025 205);color:oklch(0.4 0.09 205);font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">Enablement Author</span>
+    </div>
+    <p style="color:oklch(0.48 0.02 70);font-size:15px;margin:0 0 20px;max-width:700px;">No code change is required to publish any screen above. This is the console that produces them.</p>
+
+    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start;">
+      <div style="border:1px solid oklch(0.90 0.014 70);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+        <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:oklch(0.955 0.012 75);border-bottom:1px solid oklch(0.90 0.014 70);">
+          <div style="display:flex;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.85 0.03 45);display:inline-block;"></span></div>
+          <div style="flex:1;text-align:center;font-size:12px;color:oklch(0.48 0.02 70);">console.supplierhub.co/content/edit/tt-4471</div>
+          <span style="background:oklch(0.94 0.025 205);color:oklch(0.4 0.09 205);font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;">Business console</span>
+        </div>
+        <div style="padding:24px;">
+          <div style="display:flex;gap:10px;margin-bottom:18px;">
+            <span style="background:oklch(0.94 0.045 150);color:oklch(0.4 0.1 150);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">Draft</span>
+            <span style="color:oklch(0.84 0.016 70);">&rarr;</span>
+            <span style="background:oklch(0.94 0.01 70);color:oklch(0.5 0.02 70);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">In review</span>
+            <span style="color:oklch(0.84 0.016 70);">&rarr;</span>
+            <span style="background:oklch(0.94 0.01 70);color:oklch(0.5 0.02 70);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">Approved</span>
+            <span style="color:oklch(0.84 0.016 70);">&rarr;</span>
+            <span style="background:oklch(0.94 0.01 70);color:oklch(0.5 0.02 70);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">Published</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+            <div>
+              <label style="font-size:12px;font-weight:700;color:oklch(0.48 0.02 70);">Content type</label>
+              <div style="margin-top:5px;border:1px solid oklch(0.84 0.016 70);border-radius:8px;padding:9px 12px;font-size:13.5px;">Tooltip</div>
+            </div>
+            <div style="position:relative;">
+              <label style="font-size:12px;font-weight:700;color:oklch(0.48 0.02 70);">Target anchor</label>
+              <div style="display:flex;align-items:center;gap:6px;margin-top:5px;border:1px solid oklch(0.84 0.016 70);border-radius:8px;padding:9px 12px;font-size:13.5px;font-family:ui-monospace,monospace;">site.address.line1<span onClick="{{ noop }}" style="margin-left:auto;width:16px;height:16px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:10px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span></div>
+            </div>
+          </div>
+          <label style="font-size:12px;font-weight:700;color:oklch(0.48 0.02 70);">Body (Markdown)</label>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:5px;">
+            <textarea readonly style="height:90px;border:1px solid oklch(0.84 0.016 70);border-radius:8px;padding:10px 12px;font-size:13px;font-family:ui-monospace,monospace;resize:none;">Use the address tied to your **operating license** — not a mailing address.</textarea>
+            <div style="border:1px dashed oklch(0.84 0.016 70);border-radius:8px;padding:10px 12px;font-size:13px;color:oklch(0.24 0.02 70);">Use the address tied to your <b>operating license</b> &mdash; not a mailing address.<div style="font-size:10.5px;color:oklch(0.62 0.018 70);margin-top:8px;">Live preview</div></div>
+          </div>
+          <div style="display:flex;gap:10px;margin-top:16px;">
+            <div style="flex:1;"><label style="font-size:12px;font-weight:700;color:oklch(0.48 0.02 70);">Workflow</label><div style="margin-top:5px;border:1px solid oklch(0.84 0.016 70);border-radius:8px;padding:9px 12px;font-size:13.5px;">WF-SITE-ADD</div></div>
+            <div style="flex:1;"><label style="font-size:12px;font-weight:700;color:oklch(0.48 0.02 70);">Audience</label><div style="margin-top:5px;display:flex;gap:6px;flex-wrap:wrap;"><span style="background:oklch(0.94 0.01 70);font-size:11.5px;padding:4px 9px;border-radius:999px;">Supplier</span><span style="background:oklch(0.94 0.01 70);font-size:11.5px;padding:4px 9px;border-radius:999px;">All roles</span></div></div>
+          </div>
+          <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:20px;">
+            <button style="background:#fff;border:1px solid oklch(0.84 0.016 70);padding:9px 18px;border-radius:9px;font-weight:700;font-size:13px;">Preview as user</button>
+            <button style="background:oklch(0.66 0.16 45);color:#fff;border:none;padding:9px 18px;border-radius:9px;font-weight:700;font-size:13px;">Submit for review</button>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;padding-top:6px;">
+        <div style="display:flex;gap:10px;"><span style="width:20px;height:20px;flex-shrink:0;border-radius:50%;background:oklch(0.66 0.16 45);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span><div style="font-size:13.5px;line-height:1.5;">Authors pick anchors from a searchable registry &mdash; never a CSS selector.</div></div>
+        <div style="font-size:13.5px;line-height:1.5;">Draft &rarr; review &rarr; approve &rarr; publish, with no direct-publish path for the author who wrote it. </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const STEPS = [
+  {name:'nameActive', title:'Name your site', body:"Enter the legal facility name exactly as it appears on your operating license."},
+  {name:'addrActive', title:'Confirm the address', body:"Use the address tied to your operating license — not a mailing address."},
+  {name:'countryActive', title:'Select country', body:"This determines which audit requirements apply to your submission."},
+  {name:'submitActive', title:'Submit for review', body:"Your submission moves to Cyberdyne audit review next — you can track status anytime."}
+];
+
+class Component extends DCLogic {
+  state = {
+    microTip: true, microStatus: true,
+    tab2: 'wizard',
+    wtStep: 1,
+    sandboxSubmitted: false,
+    videoPlaying: false,
+    kbFeedback: null,
+    aiAsked: false,
+    checklist: { profile: true, invite: false, site: false, banking: false },
+    roleTab: 'path',
+    quizSubmitted: false
+  };
+
+  checkStyle(done) {
+    return done
+      ? { border: 'oklch(0.62 0.13 150)', bg: 'oklch(0.62 0.13 150)', check: '\u2713', strike: 'line-through', color: 'oklch(0.62 0.018 70)' }
+      : { border: 'oklch(0.84 0.016 70)', bg: 'transparent', check: '', strike: 'none', color: 'oklch(0.24 0.02 70)' };
+  }
+
+  renderVals() {
+    const s = this.state;
+    const tabBtn = (name) => ({
+      bg: s.tab2 === name ? 'oklch(0.66 0.16 45)' : '#fff',
+      fg: s.tab2 === name ? '#fff' : 'oklch(0.24 0.02 70)'
+    });
+    const wiz = tabBtn('wizard'), walk = tabBtn('walkthrough'), sand = tabBtn('sandbox'), vid = tabBtn('video'), kb = tabBtn('kb'), ai = tabBtn('ai');
+
+    const routes = {
+      wizard: 'portal.supplierhub.co/sites/add?step=2',
+      walkthrough: 'portal.supplierhub.co/sites/add?walkthrough=1',
+      sandbox: 'portal.supplierhub.co/sites/add/practice',
+      video: 'portal.supplierhub.co/sites/add',
+      kb: 'portal.supplierhub.co/help/articles/add-manufacturing-site',
+      ai: 'portal.supplierhub.co/help/search'
+    };
+
+    const step = STEPS[s.wtStep];
+    const highlightOn = { border: '1.5px solid oklch(0.66 0.16 45)', shadow: '0 0 0 3px oklch(0.9 0.05 45)' };
+    const highlightOff = { border: '1px solid oklch(0.84 0.016 70)', shadow: 'none' };
+    const fieldStyle = (name) => (step.name === name ? highlightOn : highlightOff);
+    const nameS = fieldStyle('nameActive'), addrS = fieldStyle('addrActive'), countryS = fieldStyle('countryActive'), submitS = fieldStyle('submitActive');
+
+    const c = s.checklist;
+    const total = 4, done = (c.profile ? 1 : 0) + (c.invite ? 1 : 0) + (c.site ? 1 : 0) + (c.banking ? 1 : 0);
+    const profile = this.checkStyle(c.profile), invite = this.checkStyle(c.invite), site = this.checkStyle(c.site), banking = this.checkStyle(c.banking);
+
+    return {
+      toggleMicroTip: () => this.setState(s2 => ({ microTip: !s2.microTip })),
+      toggleMicroStatus: () => this.setState(s2 => ({ microStatus: !s2.microStatus })),
+      microTip: s.microTip, microStatus: s.microStatus,
+      noop: () => {},
+
+      setTabWizard: () => this.setState({ tab2: 'wizard' }),
+      setTabWalk: () => this.setState({ tab2: 'walkthrough' }),
+      setTabSandbox: () => this.setState({ tab2: 'sandbox' }),
+      setTabVideo: () => this.setState({ tab2: 'video' }),
+      setTabKb: () => this.setState({ tab2: 'kb' }),
+      setTabAi: () => this.setState({ tab2: 'ai' }),
+      wizardBtnBg: wiz.bg, wizardBtnFg: wiz.fg,
+      walkBtnBg: walk.bg, walkBtnFg: walk.fg,
+      sandboxBtnBg: sand.bg, sandboxBtnFg: sand.fg,
+      videoBtnBg: vid.bg, videoBtnFg: vid.fg,
+      kbBtnBg: kb.bg, kbBtnFg: kb.fg,
+      aiBtnBg: ai.bg, aiBtnFg: ai.fg,
+      isWizard: s.tab2 === 'wizard', isWalk: s.tab2 === 'walkthrough', isSandbox: s.tab2 === 'sandbox',
+      isVideo: s.tab2 === 'video', isKb: s.tab2 === 'kb', isAi: s.tab2 === 'ai',
+      tab2Route: routes[s.tab2],
+
+      wtStepNum: s.wtStep + 1, wtTitle: step.title, wtBody: step.body,
+      wtNext: () => this.setState(s2 => ({ wtStep: Math.min(3, s2.wtStep + 1) })),
+      wtBack: () => this.setState(s2 => ({ wtStep: Math.max(0, s2.wtStep - 1) })),
+      nameBorder: nameS.border, nameShadow: nameS.shadow,
+      addrBorder: addrS.border, addrShadow: addrS.shadow,
+      countryBorder: countryS.border, countryShadow: countryS.shadow,
+      submitBorder: submitS.border, submitShadow: submitS.shadow,
+
+      sandboxSubmitted: s.sandboxSubmitted,
+      submitSandbox: () => this.setState({ sandboxSubmitted: true }),
+      resetSandbox: () => this.setState({ sandboxSubmitted: false }),
+
+      videoPlaying: s.videoPlaying, playIcon: s.videoPlaying ? '\u2759\u2759' : '\u25B6',
+      togglePlay: () => this.setState(s2 => ({ videoPlaying: !s2.videoPlaying })),
+
+      fbYes: () => this.setState({ kbFeedback: 'yes' }),
+      fbNo: () => this.setState({ kbFeedback: 'no' }),
+      yesBtnBg: s.kbFeedback === 'yes' ? 'oklch(0.94 0.045 150)' : '#fff',
+      noBtnBg: s.kbFeedback === 'no' ? 'oklch(0.95 0.04 25)' : '#fff',
+      fbNoActive: s.kbFeedback === 'no',
+
+      aiAsked: s.aiAsked, askAi: () => this.setState({ aiAsked: true }),
+
+      checklistDone: done, checklistTotal: total, checklistPct: Math.round(done / total * 100),
+      toggleProfile: () => this.setState(s2 => ({ checklist: { ...s2.checklist, profile: !s2.checklist.profile } })),
+      toggleInvite: () => this.setState(s2 => ({ checklist: { ...s2.checklist, invite: !s2.checklist.invite } })),
+      toggleSite: () => this.setState(s2 => ({ checklist: { ...s2.checklist, site: !s2.checklist.site } })),
+      toggleBanking: () => this.setState(s2 => ({ checklist: { ...s2.checklist, banking: !s2.checklist.banking } })),
+      profileBorder: profile.border, profileBg: profile.bg, profileCheck: profile.check, profileStrike: profile.strike, profileColor: profile.color,
+      inviteBorder: invite.border, inviteBg: invite.bg, inviteCheck: invite.check, inviteStrike: invite.strike, inviteColor: invite.color,
+      siteBorder: site.border, siteBg: site.bg, siteCheck: site.check, siteStrike: site.strike, siteColor: site.color,
+      bankingBorder: banking.border, bankingBg: banking.bg, bankingCheck: banking.check, bankingStrike: banking.strike, bankingColor: banking.color,
+
+      setRolePath: () => this.setState({ roleTab: 'path' }),
+      setRoleQuiz: () => this.setState({ roleTab: 'quiz' }),
+      pathTabBg: s.roleTab === 'path' ? 'oklch(0.66 0.16 45)' : '#fff', pathTabFg: s.roleTab === 'path' ? '#fff' : 'oklch(0.24 0.02 70)',
+      quizTabBg: s.roleTab === 'quiz' ? 'oklch(0.66 0.16 45)' : '#fff', quizTabFg: s.roleTab === 'quiz' ? '#fff' : 'oklch(0.24 0.02 70)',
+      roleShowsPath: s.roleTab === 'path', roleShowsQuiz: s.roleTab === 'quiz',
+      quizSubmitted: s.quizSubmitted, submitQuiz: () => this.setState({ quizSubmitted: true })
+    };
+  }
+}
+</script>
+</body>
+</html>
